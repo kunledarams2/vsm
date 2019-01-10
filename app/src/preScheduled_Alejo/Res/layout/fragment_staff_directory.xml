@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgblank"
+    android:weightSum="1"
+   >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/staffTbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Staff "
+        app:titleTextColor="#fff"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"/>
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+       >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

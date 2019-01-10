@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '28.0.0'
+    defaultConfig {
+        applicationId "com.kunledarams.alejoversionspackage"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    productFlavors {
+
+        preScheduled_Alejo {
+
+            applicationId "com.kunledarams.alejoversionspackage.Prescheduled_Alejo"
+            manifestPlaceholders = [appLabel: "Employee_Veemos"]
+        }
+
+        Alejo_Tab {
+            applicationId "com.kunledarams.alejoversionspackage.Alejo_Tab"
+            manifestPlaceholders = [appLabel: "Alejo_Tab"]
+
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.gcacace:signature-pad:1.2.1'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.microsoft.azure:azure-mobile-android:3.2.0@aar'
+    compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@jar'
+    compile 'com.microsoft.azure.android:azure-storage-android:2.0.0@aar'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'id.zelory:compressor:2.1.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'com.android.support:percent:22.2.0'
+
+    def appCenterSdkVersion = '1.9.0'
+    compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
+    testCompile 'junit:junit:4.12'
+//    implementation 'com.google.firebase:firebase-database:16.0.1:15.0.0'
+    // compile 'com.google.firebase:firebase-database:16.0.1:15.0.0'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.firebaseui:firebase-ui-database:0.4.0'
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+}
+apply plugin: 'com.google.gms.google-services'

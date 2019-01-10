@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kunledarams.alejoversionspackage">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeSplash"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BasicInfro"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".CaptureUmage"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Signature"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Checkin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ConnectVisitor"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".WelcomePage"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReturnIngVistor"/>
+        <activity
+            android:name=".VisitorAccessCode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ValidateCode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Purpose"
+            android:screenOrientation="landscape" />
+        <activity android:name=".PreBookRegBasic"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".SignInOut"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CheckOut"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Pre_Book_Out"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Normal_out"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Pre_MainActivity" />
+        <activity android:name=".Pre_schedule" />
+        <activity android:name=".Registr_form"/>
+        <activity android:name=".Visitor_Info" />
+        <activity android:name=".Staff_Infro" />
+        <activity android:name=".Fragment.Staff_directory"/>
+        <activity android:name=".Fragment.History"/>
+
+
+
+
+        <activity android:name=".Login_Form"/>
+    </application>
+
+</manifest>

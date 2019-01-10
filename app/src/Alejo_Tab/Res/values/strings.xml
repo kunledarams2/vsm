@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alejo_Tab</string>
+    <string name="legalNote"> I declare that all the information entered by me; are all correct.And if anything illegal happened during my visit;
+    I will make myself available for any questioning. </string>
+
+    <string name="noteAccess">Important Notice: Please write down Your Access Code; You will need it to sign out </string>
+</resources>

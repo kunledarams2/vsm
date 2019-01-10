@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:title=" Authentication"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noteAccess"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:orientation="vertical"
+       android:layout_marginTop="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access Code"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/editbox"
+            android:padding="10dp"
+
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:textColor="#fff"
+            android:background="@drawable/editbox"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="CheclAccess"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
