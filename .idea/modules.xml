@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlejoVersionsPackage.iml" filepath="$PROJECT_DIR$/AlejoVersionsPackage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vsm.iml" filepath="$PROJECT_DIR$/vsm.iml" />
     </modules>
   </component>
 </project>

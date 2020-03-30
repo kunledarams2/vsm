@@ -64,6 +64,7 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".Normal_out"
             android:screenOrientation="landscape"></activity>
+
         <activity android:name=".Pre_MainActivity" />
         <activity android:name=".Pre_schedule" />
         <activity android:name=".Registr_form"/>
